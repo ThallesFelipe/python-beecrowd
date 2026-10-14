@@ -14,9 +14,9 @@ for _ in range(t):
 
     tempo_em_anos = 0
 
-    while popu_a <= popu_b:
-        qtd_nascidos_a = popu_a * (cresc_a / 100)
-        qtd_nascidos_b = popu_b * (cresc_b / 100)
+    while popu_a <= popu_b and tempo_em_anos <= 100:
+        qtd_nascidos_a = int(popu_a * (cresc_a / 100))
+        qtd_nascidos_b = int(popu_b * (cresc_b / 100))
 
         popu_a += qtd_nascidos_a
         popu_b += qtd_nascidos_b
